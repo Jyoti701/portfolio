@@ -7,6 +7,7 @@ const Logo_title = () => {
     <div className='logo_container'>
       <div className='img_container'>
 <img src={img} alt="logo_img"width="100%" height="100%" className='logo_img'/>
+
       </div>
       <div className='title_container'>
         <h3 className='title_txt'>Jyoti Kumar Thakur</h3>
