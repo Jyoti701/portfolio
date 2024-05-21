@@ -5,6 +5,25 @@ import { FaGithub } from "react-icons/fa6";
 
 import { Link, NavLink } from "react-router-dom"
 const Navigation = () => {
+  const data_socialmedia_sideheader=[
+    {
+      icon:<IoIosMail/>,
+    txt:"Mail",
+    link:"mailto:vikashthakur701@gmail.com",
+    color:'#282856'
+  },
+  {
+    icon:<FaLinkedin/>,
+    txt:"LinkedIn",
+    link:"hh",
+    color:'#282856'},
+  {
+    icon:<FaGithub/>,
+    color:'#282856',
+    txt:"GitHub",
+    link:'https://github.com/Jyoti701'
+  },
+  ]
   return (
     <div className="navigation_container">
       <ul>
@@ -14,12 +33,18 @@ const Navigation = () => {
         <NavLink to="/portfolio"className='nav_item'><li>Portfolio</li></NavLink>
         <NavLink to="/contact"className='nav_item'><li>Contact</li></NavLink>
       </ul>
-      <div className='social_icon_container'>
-<FaLinkedin color='#282856'/>
-<IoIosMail color='#282856' />
-<FaGithub  color='#282856'/>
-    </div>
-    <div className="copyright"><p>Copyright © 2023 Jyoti Kuamr Thakur. All rights reserved.</p></div>
+      
+        <div className='social_icon_container'>
+        {
+        data_socialmedia_sideheader.map((linkitem)=>{
+          return(
+<a href={linkitem.link} target="_blank">{linkitem.icon}</a>
+          )
+        })
+    
+      }
+      </div> 
+    <div className="copyright"><p>Copyright © 2024 Jyoti Kuamr Thakur. All rights reserved.</p></div>
     </div>
     
   )
