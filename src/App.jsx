@@ -8,6 +8,7 @@ import Contact from './Navigation__component/Contact'
 import Portfolio from './Navigation__component/Portfolio'
 import { Outlet } from 'react-router-dom'
 import Home from './Navigation__component/Home'
+import { IoMdMenu } from "react-icons/io";
 export const approute=createBrowserRouter([
   {
 path:'/',
@@ -47,6 +48,7 @@ function App() {
   return(
     <div className='app_container'>
     <Sideheader/>
+    <IoMdMenu/>
     <Outlet/>
     
     </div>
