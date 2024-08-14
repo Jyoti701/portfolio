@@ -83,7 +83,7 @@ const About = () => {
 {
   carddata.map((item,index)=>{
     return(
-      <div className='icon_card_container'>
+      <div className='icon_card_container'key={index}>
       <div className='icon_container'>
 <img src={item.img}alt="teckstack_icon" className='icon_img'/>
       </div>

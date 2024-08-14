@@ -1,10 +1,16 @@
-import React from 'react'
+import React ,{useContext}from 'react'
 import './contact.css'
 import email from './image/email.jpg'
 import linkedin from './image/linkedin.png'
 import github from './image/github.png'
+import contextEle from '../Context'
 
 const Contact = () => {
+  const data=useContext(contextEle)
+  function scrollfun(){
+    data.setData()
+    
+  }
   const datasocialmedia=[
     {
     icon:email,
@@ -22,7 +28,7 @@ const Contact = () => {
   },
 ]
   return (
-    <div className='contact_container'>
+    <div className='contact_container' onScroll={scrollfun}>
     <div className='left_contact_container'>
 <p className='letsconnect'>- LET'S CONNECT</p>
 <h2 className='getintouch'>Get In Touch</h2>
@@ -46,7 +52,7 @@ const Contact = () => {
   <input type='email'placeholder='enter your email id'className='emailid commoninput'/>
   <input type='number'placeholder='enter your mobile number'className='mobileno commoninput'/>
 <textarea placeholder='Enter your message here'className='message_box'></textarea>
-<input type='submit'value="submit"className='submit_btn'></input>
+<a href="mailto:vikashthakur701@gmail.com"value="submit"className='submit_btn'>Submit</a>
   
 </form>
     </div>

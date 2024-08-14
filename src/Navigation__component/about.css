@@ -188,6 +188,7 @@ p.innovative_mern {
     @media(max-width:601px){
         .about_container{
      width:100%;
+     position: absolute;
         }
         .about_container_inside {
             flex-direction: column
