@@ -1,5 +1,6 @@
 import Sideheader from './Sideheader';
 import './App.css';
+import '../src/Navigation__component/modify.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Errorpage from './Navigation__component/Errorpage';
 import About from './Navigation__component/About';
