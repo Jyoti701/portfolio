@@ -148,9 +148,6 @@
     right:0px;
 }
 @media(max-width:601px){
-    .service_container {
-        width:100%;
-    }
     .service_card {
         display: flex;
         justify-content: center;
@@ -162,6 +159,12 @@
         overflow: unset;
         height: max-content;
         padding-left: unset;
+        overflow: unset;
+        height: max-content;
+        padding-left: unset;
+        position: absolute;
+        width:100%;
+    }
     }
     .service_upper_txt {
         font-size: 14px;

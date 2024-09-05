@@ -1,6 +1,9 @@
-import React from 'react'
+import Buttonhome from './Buttonhome'
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa";
+import { FaCloudDownloadAlt } from "react-icons/fa";
+import resume from './image/Resume.pdf'
+import { NavLink } from 'react-router-dom';
 const Home_text_animation = () => {
   return (
     <div className='text_animation_container'>
@@ -20,8 +23,11 @@ const Home_text_animation = () => {
 <div className='info_container'>
 <div className='para_info_container'><p className='para_info'>A <span>Front-End Developer</span> passionate about creating intractive application and experience on the web.</p></div>
    <div className='btn_container'>
-    <button>About Me <FaTelegramPlane /></button>
-    <button>My Works <FaLocationArrow /></button>
+   <NavLink to="/about" className="btn_hh">   <Buttonhome btnvalue={"About Me"} icon={<FaTelegramPlane/>}/>
+</NavLink>
+<NavLink to="/Portfolio" className="btn_hh"><Buttonhome btnvalue={"My Works"} icon={<FaLocationArrow/>}/>
+</NavLink>
+ <a href={resume} className='resume_download' download><Buttonhome btnvalue={" Download Resume"} icon={<FaCloudDownloadAlt/>}/></a>
    </div>
    <div className='contact_information_container'>
 <p>+91 7992376119</p>

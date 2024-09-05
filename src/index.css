@@ -6,4 +6,11 @@
   scroll-behavior: smooth;
     transition: .3s linear;
 }
-
+body{
+  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    scroll-behavior: smooth;
+      transition: .3s linear;
+}

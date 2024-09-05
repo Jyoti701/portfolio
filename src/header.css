@@ -126,3 +126,32 @@ position:relative
 .header-container::-webkit-scrollbar{
   display:none;
 }
+svg.cross_btn{
+  display:none;
+}
+@media(max-width:768px){
+  svg.cross_btn {
+    position: absolute;
+    right: 10px;
+    top: -16px;
+    width: 24px;
+    height: 24px;
+    fill: #0c0c44;
+display:block;
+}
+.logo_container {
+  position: relative;
+}
+.cross_btn{
+  position: relative;
+}
+svg.cross_icon {
+  position: absolute;
+  right: 15px;
+  top: -18px;
+}
+.header_container .cross_icon.display_none{
+  display: none;
+}
+
+}

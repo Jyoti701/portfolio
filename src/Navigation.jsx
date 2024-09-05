@@ -3,6 +3,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { FaGithub } from "react-icons/fa6";
 
+
 import { Link, NavLink } from "react-router-dom"
 const Navigation = () => {
   const data_socialmedia_sideheader=[
@@ -15,7 +16,7 @@ const Navigation = () => {
   {
     icon:<FaLinkedin/>,
     txt:"LinkedIn",
-    link:"hh",
+    link:"https://www.linkedin.com/feed/",
     color:'#282856'},
   {
     icon:<FaGithub/>,
@@ -32,13 +33,15 @@ const Navigation = () => {
         <NavLink to="/services"><li>Services</li></NavLink>
         <NavLink to="/portfolio"className='nav_item'><li>Portfolio</li></NavLink>
         <NavLink to="/contact"className='nav_item'><li>Contact</li></NavLink>
+       
+       
       </ul>
       
         <div className='social_icon_container'>
         {
-        data_socialmedia_sideheader.map((linkitem)=>{
+        data_socialmedia_sideheader.map((linkitem,index)=>{
           return(
-<a href={linkitem.link} target="_blank">{linkitem.icon}</a>
+<a href={linkitem.link} target="_blank"key={index}>{linkitem.icon}</a>
           )
         })
     
