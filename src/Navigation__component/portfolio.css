@@ -7,8 +7,11 @@
         /* height: 300px; */
         object-fit: contain;
         box-sizing: border-box;
+<<<<<<< HEAD
         mix-blend-mode: darken;
         min-height: 190px;
+=======
+>>>>>>> e199b1587129ffd986cd3c50ee14eb91c9fcba7f
     }
     p.project_title {
         font-size: 20px;
@@ -22,10 +25,13 @@
         width: 90%;
         margin: auto;
         text-align: left;
+<<<<<<< HEAD
         min-height: 120px;
     }
     .portfolio_card:nth-child(1) .project_description {
         min-height: 190px;
+=======
+>>>>>>> e199b1587129ffd986cd3c50ee14eb91c9fcba7f
     }
     .portfolio_card {
         display: flex;
